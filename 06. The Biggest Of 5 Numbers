@@ -1,0 +1,39 @@
+using System;
+
+    class Program
+    {
+        static void Main()
+        {
+            float firstNumber = float.Parse(Console.ReadLine());
+            float secNumber = float.Parse(Console.ReadLine());
+            float thirdNumber = float.Parse(Console.ReadLine());
+            float fourthNumber = float.Parse(Console.ReadLine());
+            float fifthNumber = float.Parse(Console.ReadLine());
+
+            if (firstNumber > secNumber && firstNumber > thirdNumber
+                && firstNumber > fourthNumber && firstNumber > fifthNumber)
+            {
+                Console.WriteLine(firstNumber);
+            }
+            else if (secNumber > firstNumber && secNumber > thirdNumber
+                && secNumber > fourthNumber && secNumber > fifthNumber) 
+            {
+                Console.WriteLine(secNumber);
+            }
+            else if (thirdNumber > firstNumber && thirdNumber > secNumber
+                && thirdNumber > fourthNumber && thirdNumber > fifthNumber)
+            {
+                Console.WriteLine(thirdNumber);
+            }
+            else if (fourthNumber > firstNumber && fourthNumber > secNumber
+                && fourthNumber > thirdNumber && fourthNumber > fifthNumber)
+            {
+                Console.WriteLine(fourthNumber);
+            }
+            else
+            {
+                Console.WriteLine(fifthNumber);
+            }
+        }
+    }
+
