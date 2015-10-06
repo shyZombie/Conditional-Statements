@@ -1,0 +1,24 @@
+using System;
+using System.Globalization;
+
+    class Program
+    {
+        static void Main()
+        {
+            string timeImput = Console.ReadLine();
+            string format = "h:mm tt";
+            DateTime beerTime = DateTime.ParseExact(timeImput, format, CultureInfo.InvariantCulture);
+            DateTime startTime = DateTime.Parse("1:00 PM");
+            DateTime endTime = DateTime.Parse("2:59 AM");
+
+            if (beerTime >= startTime || beerTime <= endTime)
+            {
+                Console.WriteLine("beer time");
+            }
+            else
+            {
+                Console.WriteLine("non-beer time");
+            }
+        }
+    }
+
